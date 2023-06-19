@@ -135,6 +135,13 @@ require('lazy').setup({
     priority = 1000,
     config = function()
       vim.cmd.colorscheme 'onedark'
+      vim.cmd [[highlight Normal guibg=NONE ctermbg=NONE]]
+      vim.cmd [[highlight LineNr guibg=NONE ctermbg=NONE]]
+      vim.cmd [[highlight CursorLineNr guibg=NONE ctermbg=NONE]]
+      vim.cmd [[highlight SignColumn guibg=NONE ctermbg=NONE]]
+      vim.cmd [[highlight StatusLine guibg=NONE ctermbg=NONE]]
+      vim.cmd [[highlight StatusLineNC guibg=NONE ctermbg=NONE]]
+      vim.cmd [[highlight VertSplit guibg=NONE ctermbg=NONE]]
     end,
   },
 
